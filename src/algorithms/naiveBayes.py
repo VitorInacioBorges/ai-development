@@ -5,7 +5,9 @@ import pandas as pd
 
 # Columns = PassengerId	/ Survived / Pclass /	Name / Sex / Age / SibSp / Parch / Ticket / Fare / Cabin / Embarked
 url = "https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv"
+
 df = pd.read_csv(url)
+df['Sex'] = df['Sex'].map({'male': 0, 'female': 1}) 
 
 X = df.drop(columns=["PassengerId", "Pclass", "Name", "Ticket", "Cabin", "Fare", "SibSp", "Parch", "Embarked"])
 Y = df['Survived']
