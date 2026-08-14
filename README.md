@@ -3,7 +3,7 @@
 A repository made for machine learning algorithms implemented with python
 
 ```bash
-# basic setup for WSl on Windows
+# basic setup for Linux Ubuntu Distro
 
 # update and dependency installation
 sudo apt update && sudo apt upgrade -y
@@ -16,9 +16,20 @@ python3 -m venv venv
 # for terminal usage has to run everytime
 source venv/bin/activate
 
+# deactivates python runtime environment
+deactivate
+
+# AI & ML dependencies (python inside module for this project)
+python -m pip install numpy pandas matplotlib scikit-learn tensorflow torch seaborn
+
 # AI & ML dependencies (pip only)
 pip install numpy pandas matplotlib scikit-learn tensorflow torch seaborn
 
-# AI & ML dependencies (venv pip only)
+# AI & ML dependencies (pip inside venv)
 venv/bin/python -m pip install numpy pandas matplotlib scikit-learn tensorflow torch seaborn
+
+# debugging and checking if pip and python match the same folder
+# if not then change pip or python
+which python
+which pip
 ```
