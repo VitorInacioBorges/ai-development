@@ -1,7 +1,3 @@
-print("Hello World")
-
-var = print("Hello World")
-var2 = 1 + 1
-
-print(var)
-print(var2)
+import numpy as np
+import pandas as pd
+import sklearn as skt
