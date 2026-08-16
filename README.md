@@ -1,9 +1,10 @@
 # Machine_Learning
 
-A repository made for machine learning algorithms implemented with python
+A repository made for machine learning algorithms, data science and artificial intelligence learning implemented with python
+
+### Basic Setup: (Ubuntu/Linux)
 
 ```bash
-# basic setup for Linux Ubuntu Distro
 
 # update and dependency installation
 sudo apt update && sudo apt upgrade -y
@@ -27,6 +28,10 @@ pip install numpy pandas matplotlib scikit-learn tensorflow torch seaborn
 
 # AI & ML dependencies (pip inside venv)
 venv/bin/python -m pip install numpy pandas matplotlib scikit-learn tensorflow torch seaborn
+
+# GUI installation for Matplotlib
+venv/bin/python -m pip install pyqt5 # PyQt => Cross-platform
+sudo apt-get install python3-tk # Tkinter => Linux/Ubuntu
 
 # debugging and checking if pip and python match the same folder
 # if not then change pip or python
